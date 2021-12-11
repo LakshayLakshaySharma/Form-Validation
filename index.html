@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Validation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>FORM</h1>
+    <div id = "container">
+        <form action = "/action.php" id = "form-Container" name = "form" method = "post" onsubmit = "return validation()">
+        <!-- name feild div container   -->
+          <div id = "name" class = "input-container">
+            <input type = "text" required id = "name" class ="input" placeholder = "Enter Your Name" name = "fname">
+            <span class = "errorMsg"></span>
+          </div>
+          <br>
+        <!-- email feild container   -->
+            <div id = "email" class = "input-container">
+            <input type = "email" required id = "email"name = "femail" class ="input" placeholder = "Enter Your E-Mail">
+            <span class = "errorMsg"></span>
+          </div>
+          <br>
+        <!--   phone number div container -->
+            <div id = "phone" class = "input-container">
+            <input type = "tel" required id = "phone" class ="input" placeholder = "Enter Your Phone Number" name = "fphone">
+            <span class = "errorMsg"></span>
+          </div>
+          <br>
+        <!--    password-->
+            <div id = "pass" class = "input-container">
+            <input type = "password" name = "fpass" required id = "pass" class ="input" placeholder = "Create Password">
+            <span class = "errorMsg"></span>
+          </div>
+          <br>
+          <!-- confirm password  -->
+    <div id = "cpass" class = "input-container">
+        <input type = "password" required id = "cpass" name = "fcpass" class ="input" placeholder = "Confirm password">
+        <span class = "errorMsg"></spa>
+      </div>
+      <br>
+    
+      <button id = "submit">Submit</button>
+      </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
